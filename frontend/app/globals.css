@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --muted: #64748b;
+  --primary: #2563eb;
+}
+
+.dark {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --border: #334155;
+  --muted: #94a3b8;
+  --primary: #3b82f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================
+   AbleSpace Light Theme
+   ========================================= */
+
+html.light {
+  background: #f8fafc;
+}
+
+html.light body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* Main dark backgrounds */
+html.light .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-slate-900 {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Borders */
+html.light .border-slate-800 {
+  border-color: #e2e8f0 !important;
+}
+
+html.light .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+
+/* Text */
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Hover */
+html.light .hover\:bg-slate-800:hover {
+  background-color: #e2e8f0 !important;
+}
+
+html.light .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
+/* Inputs */
+html.light input,
+html.light textarea,
+html.light select {
+  color: #0f172a;
+  background-color: #ffffff;
+}
+
+/* Placeholder */
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Settings cards */
+html.light .bg-slate-950\/30 {
+  background-color: #fef2f2 !important;
+}
+
+/* Keep blue buttons blue */
+html.light .bg-blue-600 {
+  background-color: #2563eb !important;
+}
+
+html.light .hover\:bg-blue-700:hover {
+  background-color: #1d4ed8 !important;
+}
+
+/* ================================
+   AbleSpace Theme System
+================================ */
+
+:root {
+  --ablespace-bg: #020617;
+  --ablespace-surface: #0f172a;
+  --ablespace-surface-2: #1e293b;
+  --ablespace-border: #1e293b;
+  --ablespace-text: #ffffff;
+  --ablespace-muted: #94a3b8;
+  --ablespace-primary: #2563eb;
+}
+
+html[data-theme='dark'] {
+  --ablespace-bg: #020617;
+  --ablespace-surface: #0f172a;
+  --ablespace-surface-2: #1e293b;
+  --ablespace-border: #1e293b;
+  --ablespace-text: #ffffff;
+  --ablespace-muted: #94a3b8;
+}
+
+html[data-theme='light'] {
+  --ablespace-bg: #f8fafc;
+  --ablespace-surface: #ffffff;
+  --ablespace-surface-2: #f1f5f9;
+  --ablespace-border: #cbd5e1;
+  --ablespace-text: #0f172a;
+  --ablespace-muted: #64748b;
+}
+
+/* Main page background */
+html[data-theme='light'] body {
+  background: var(--ablespace-bg);
+  color: var(--ablespace-text);
+}
+
+/* Common dark backgrounds */
+html[data-theme='light'] .bg-slate-950 {
+  background-color: var(--ablespace-bg) !important;
+}
+
+html[data-theme='light'] .bg-slate-900 {
+  background-color: var(--ablespace-surface) !important;
+}
+
+html[data-theme='light'] .bg-slate-800 {
+  background-color: var(--ablespace-surface-2) !important;
+}
+
+/* Borders */
+html[data-theme='light'] .border-slate-800 {
+  border-color: var(--ablespace-border) !important;
+}
+
+html[data-theme='light'] .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+
+/* White text */
+html[data-theme='light'] .text-white {
+  color: var(--ablespace-text) !important;
+}
+
+/* Muted text */
+html[data-theme='light'] .text-slate-300 {
+  color: #334155 !important;
+}
+
+html[data-theme='light'] .text-slate-400 {
+  color: var(--ablespace-muted) !important;
+}
+
+html[data-theme='light'] .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Inputs */
+html[data-theme='light'] input,
+html[data-theme='light'] textarea,
+html[data-theme='light'] select {
+  background-color: #ffffff;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+html[data-theme='light'] input::placeholder,
+html[data-theme='light'] textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Buttons / hover */
+html[data-theme='light'] .hover\:bg-slate-800:hover {
+  background-color: #e2e8f0 !important;
+}
