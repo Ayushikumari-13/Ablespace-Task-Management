@@ -1,115 +1,76 @@
-# 🚀 AbleSpace Task Management
+# AbleSpace Task Management
 
-A full-stack Task Management application developed to provide a simple, modern, and efficient way to create, manage, organize, and track tasks.
+A modern and responsive Task Management application designed to help users organize, manage, and track their tasks efficiently.
 
-The project follows a separate **Frontend + Backend architecture**, making the application modular, maintainable, and scalable.
-
----
-
-## 📌 Overview
-
-**AbleSpace Task Management** is a web-based productivity application designed to help users manage their daily tasks from a centralized dashboard.
-
-The application provides an intuitive interface for managing tasks, viewing task-related information, and configuring application settings.
-
-The project is divided into two major parts:
-
-- **Frontend** – User interface and client-side application
-- **Backend** – REST APIs and server-side application logic
+The project is built with a separate frontend and backend architecture, making it scalable, maintainable, and easy to extend.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-### 🔐 Authentication
-
-- User login
-- User registration
-- Secure authentication flow
-- Protected application access
-
-### 📊 Dashboard
-
-- Centralized task overview
-- Clean and responsive dashboard
-- Task-related information at a glance
-- Easy navigation between application modules
-
-### ✅ Task Management
-
-- Create tasks
-- View tasks
-- Update tasks
-- Delete tasks
-- Manage task status
-- Organize tasks efficiently
-
-### ⚙️ Settings
-
-- Application settings page
-- User-related configuration
-- Clean and accessible settings interface
-
-### 📱 Responsive Design
-
-- Responsive user interface
-- Works across desktop and smaller screen sizes
-- Clean and modern layout
+- 🔐 User Authentication
+- 📊 Interactive Dashboard
+- ✅ Create and Manage Tasks
+- 📝 Update Task Details
+- 🗑️ Delete Tasks
+- 📌 Track Task Status
+- ⚙️ Settings Management
+- 📱 Responsive User Interface
+- 🔄 Frontend and Backend API Integration
+- 🧩 Modular and Scalable Project Structure
 
 ---
 
-# 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
-## Frontend
+### Frontend
 
 - Next.js
 - React.js
-- TypeScript
+- JavaScript / TypeScript
 - HTML5
 - CSS
-- JavaScript
 - REST API Integration
 
-## Backend
+### Backend
 
 - NestJS
 - Node.js
-- TypeScript
 - REST APIs
+- TypeScript
 
-## Development Tools
+### Tools & Technologies
 
 - Git
 - GitHub
 - npm
-- Visual Studio Code
+- VS Code
 
 ---
 
-# 🏗️ Project Architecture
-
-The application follows a client-server architecture.
+## 📂 Project Structure
 
 ```text
-                    ┌─────────────────────┐
-                    │       User          │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │      Frontend       │
-                    │   Next.js / React   │
-                    └──────────┬──────────┘
-                               │
-                         REST API
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │       Backend       │
-                    │    NestJS / Node    │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │      Database       │
-                    └─────────────────────┘
+ABLESPACE-TASK-MANAGEMENT/
+│
+├── backend/
+│   ├── src/
+│   ├── test/
+│   ├── package.json
+│   └── ...
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── ...
+│
+├── docs/
+│   ├── Dashboard.png
+│   ├── login.png
+│   ├── Tasks.png
+│   └── Settings.png
+│
+├── .gitignore
+├── README.md
+└── ...
