@@ -1,264 +1,115 @@
-AbleSpace Task Management
+# 🚀 AbleSpace Task Management
 
-A full-stack Task Management System built for the AbleSpace Full Stack
-Developer technical assessment.
+A full-stack Task Management application developed to provide a simple, modern, and efficient way to create, manage, organize, and track tasks.
 
-Dashboard Preview
+The project follows a separate **Frontend + Backend architecture**, making the application modular, maintainable, and scalable.
 
-Features
+---
 
-Guest login with JWT access token
+## 📌 Overview
 
-Responsive task-management dashboard
+**AbleSpace Task Management** is a web-based productivity application designed to help users manage their daily tasks from a centralized dashboard.
 
-Sidebar navigation
+The application provides an intuitive interface for managing tasks, viewing task-related information, and configuring application settings.
 
-Create tasks
+The project is divided into two major parts:
 
-Task title and description
+- **Frontend** – User interface and client-side application
+- **Backend** – REST APIs and server-side application logic
 
-Task status: To Do, In Progress, Completed
+---
 
-Optional due date
+## ✨ Features
 
-Dashboard statistics for Total, To Do, In Progress and Completed
-tasks
+### 🔐 Authentication
 
-Update task status
+- User login
+- User registration
+- Secure authentication flow
+- Protected application access
 
-Delete tasks
+### 📊 Dashboard
 
-Empty-state UI
+- Centralized task overview
+- Clean and responsive dashboard
+- Task-related information at a glance
+- Easy navigation between application modules
 
-Light/dark theme support
+### ✅ Task Management
 
-MongoDB persistence
+- Create tasks
+- View tasks
+- Update tasks
+- Delete tasks
+- Manage task status
+- Organize tasks efficiently
 
-REST API
+### ⚙️ Settings
 
-Frontend/backend separation
+- Application settings page
+- User-related configuration
+- Clean and accessible settings interface
 
-Tech Stack
+### 📱 Responsive Design
 
-Frontend
+- Responsive user interface
+- Works across desktop and smaller screen sizes
+- Clean and modern layout
 
-Next.js 16
+---
 
-React
+# 🛠️ Technology Stack
 
-TypeScript
+## Frontend
 
-Tailwind CSS
+- Next.js
+- React.js
+- TypeScript
+- HTML5
+- CSS
+- JavaScript
+- REST API Integration
 
-Next.js App Router
+## Backend
 
-Backend
+- NestJS
+- Node.js
+- TypeScript
+- REST APIs
 
-Node.js
+## Development Tools
 
-TypeScript
+- Git
+- GitHub
+- npm
+- Visual Studio Code
 
-NestJS
+---
 
-REST API
+# 🏗️ Project Architecture
 
-JWT authentication
+The application follows a client-server architecture.
 
-MongoDB
-
-Project Structure
-
-ABLESPACE-TASK-MANAGEMENT/
-├── backend/
-├── frontend/
-├── docs/
-│   └── dashboard.png
-└── README.md
-
-Getting Started
-
-Prerequisites
-
-Node.js 18+
-
-npm
-
-MongoDB
-
-Clone
-
-git clone https://github.com/Ayushikumari-13/Ablespace-Task-Management.git
-cd Ablespace-Task-Management
-
-Backend Setup
-
-cd backend
-npm install
-npm run start:dev
-
-Create backend/.env:
-
-PORT=4000
-MONGODB_URI=mongodb://127.0.0.1:27017/ablespace
-JWT_SECRET=change-this-development-secret
-FRONTEND_URL=http://localhost:3000
-
-Backend URL:
-
-http://localhost:4000
-
-Frontend Setup
-
-Open another terminal:
-
-cd frontend
-npm install
-npm run dev
-
-Frontend URL:
-
-http://localhost:3000
-
-Guest Login
-
-The frontend uses:
-
-POST /api/auth/guest
-
-After a successful guest login, the returned access token is stored in
-browser local storage and the user is redirected to /dashboard.
-
-Task Workflow
-
-Open http://localhost:3000.
-
-Click Continue as Guest.
-
-Open the dashboard.
-
-Click + Add Task.
-
-Enter the title, description, status and optional due date.
-
-Create the task.
-
-Update the task status as work progresses.
-
-Delete tasks when required.
-
-Verify that dashboard statistics update correctly.
-
-API
-
-Authentication
-
-POST http://localhost:4000/api/auth/guest
-
-Task operations are consumed through the frontend task API hook.
-
-Environment Variables
-
-Do not commit real .env files or secrets.
-
-Example:
-
-PORT=4000
-MONGODB_URI=mongodb://127.0.0.1:27017/ablespace
-JWT_SECRET=your-secret-here
-FRONTEND_URL=http://localhost:3000
-
-For production, use a strong JWT secret and a production MongoDB
-connection string.
-
-Build Verification
-
-Run:
-
-cd frontend
-npm run build
-
-Before submission, verify:
-
-Guest login
-
-Dashboard loading
-
-Task creation
-
-Status updates
-
-Task deletion
-
-MongoDB connectivity
-
-Page refresh behaviour
-
-Desktop and mobile layouts
-
-Deployment
-
-Before deployment:
-
-Deploy the backend.
-
-Configure production MongoDB.
-
-Configure production environment variables.
-
-Deploy the frontend.
-
-Replace the local API URL with the production backend URL.
-
-Test guest login on the live site.
-
-Test create/update/delete task flows.
-
-Test desktop and mobile layouts.
-
-Live Application
-
-Live URL: Add after deployment.
-
-Backend API URL: Add after deployment.
-
-Part 2 -- Product Understanding
-
-The assessment also asks for an exploration of the AbleSpace Take Data
-screen from the Caseload tab.
-
-Submit either:
-
-A document containing screenshots and the workflow explanation, or
-
-A walkthrough video.
-
-Add the final screenshots/video link and UX/UI observations here before
-submission.
-
-Assessment Checklist
-
-Requirement                   Status
-
-Next.js frontend              Done
-Tailwind CSS                  Done
-Guest Login                   Done
-Reusable components           Done
-Task management dashboard     Done
-Theme support                 Done
-MongoDB                       Done
-REST API                      Done
-Public GitHub repository      Done
-README                        Done
-Working deployed URL          Add after deployment
-Part 2 submission             Add before submission
-Multiple meaningful commits   Continue with small commits
-
-Author
-
-Ayushi Kumari
-
-GitHub: https://github.com/Ayushikumari-13
-
-License
-
-Developed as a technical assessment project for evaluation purposes.
+```text
+                    ┌─────────────────────┐
+                    │       User          │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │      Frontend       │
+                    │   Next.js / React   │
+                    └──────────┬──────────┘
+                               │
+                         REST API
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │       Backend       │
+                    │    NestJS / Node    │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │      Database       │
+                    └─────────────────────┘
